@@ -1,0 +1,21 @@
+{
+    "name": "otifsolutions/activity-logger",
+    "description": "Logs admin activities like login, update, delete",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Otifsolutions\\ActivityLogger\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Otifsolutions\\ActivityLogger\\ActivityLoggerServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    }
+}
