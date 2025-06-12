@@ -1,21 +1,30 @@
 {
     "name": "otifsolutions/activity-logger",
-    "description": "Logs admin activities like login, update, delete",
+    "description": "A simple Laravel activity logger package.",
     "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Otif Solutions",
+        "email": "support@otifsolutions.com"
+      }
+    ],
     "autoload": {
-        "psr-4": {
-            "Otifsolutions\\ActivityLogger\\": "src/"
-        }
+      "psr-4": {
+        "Otifsolutions\\ActivityLogger\\": "src/"
+      },
+      "files": [
+        "src/helpers.php"
+      ]
     },
     "extra": {
-        "laravel": {
-            "providers": [
-                "Otifsolutions\\ActivityLogger\\ActivityLoggerServiceProvider"
-            ]
-        }
+      "laravel": {
+        "providers": [
+          "Otifsolutions\\ActivityLogger\\ActivityLoggerServiceProvider"
+        ]
+      }
     },
-    "require": {
-        "php": ">=8.0",
-        "illuminate/support": "^10.0|^11.0|^12.0"
-    }
-}
+    "minimum-stability": "dev",
+    "prefer-stable": true
+  }
+  
